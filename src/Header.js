@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import { ReactComponent as HeaderImg } from "./images/HeaderImg.svg";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <Fragment>
-      <HeaderImg className="headerSvg" />
-    </Fragment>
+    <div className="header">
+      <img src="images/HeaderImg.svg" alt="" />
+    </div>
   );
 };
 

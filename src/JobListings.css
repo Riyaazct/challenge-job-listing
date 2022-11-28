@@ -1,0 +1,119 @@
+.container {
+  background: hsl(180, 52%, 96%);
+}
+
+/* 
+
+
+### Neutral
+
+- Light Grayish Cyan (Background): hsl(180, 52%, 96%)
+- Light Grayish Cyan (Filter Tablets): hsl(180, 31%, 95%)
+- Dark Grayish Cyan: hsl(180, 8%, 52%)
+- Very Dark Grayish Cyan: hsl(180, 14%, 20%)
+ */
+
+.cardContainer {
+  display: flex;
+  margin: auto;
+  margin: 5px auto;
+}
+
+.jobCard {
+  display: flex;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80vw;
+  box-shadow: 0px 8px 27px 0px rgba(91, 164, 164, 0.55);
+  -webkit-box-shadow: 0px 8px 27px 0px rgba(91, 164, 164, 0.55);
+  -moz-box-shadow: 0px 8px 27px 0px rgba(91, 164, 164, 0.55);
+}
+
+/* Logo*/
+.imageContainer {
+  padding: 20px;
+}
+
+/* Job card sections*/
+.cardContent {
+  margin: 5px;
+}
+
+/* Card content at the start of the container */
+.end {
+  list-style: disc;
+}
+
+/* Card content in center */
+.centerContent {
+  margin: auto 0px auto 10px;
+}
+
+.centerContent li {
+  margin: 5px;
+}
+
+.centerTitle {
+  display: flex;
+  width: 20vw;
+}
+
+.centerFoot {
+  display: flex;
+}
+/* end of card content in center*/
+
+/* Content on the end of the card */
+
+.endContent {
+  margin-left: auto;
+  display: flex;
+  height: 40px;
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.endContent li {
+  margin: 0 10px;
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+.cardListItem {
+  margin: 0 5px;
+}
+
+.company {
+  color: red;
+}
+
+.isNewAd {
+}
+
+.featured {
+}
+
+.position {
+}
+
+.postedAt {
+}
+
+.contract {
+}
+
+.location {
+}
+
+.role {
+}
+
+.level {
+}
+
+.endContent li {
+}
