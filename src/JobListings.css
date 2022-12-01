@@ -21,7 +21,7 @@ Dark cyan :  hsl(180, 29%, 50%)
 }
 
 .cardContainer:first-child {
-  margin-top: 80px;
+  margin-top: 0px;
 }
 
 .jobCard {

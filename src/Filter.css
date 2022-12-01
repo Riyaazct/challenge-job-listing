@@ -1,0 +1,13 @@
+.FilteredContainer {
+  background-color: hsl(180, 31%, 90%);
+  width: 75%;
+  height: 75px;
+  margin: -37.5px auto 0 auto;
+  opacity: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+}

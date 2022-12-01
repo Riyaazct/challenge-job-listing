@@ -4,7 +4,7 @@ import "./footer.css";
 function Footer() {
   return (
     <Fragment>
-      <div class="attribution footer">
+      <div className="attribution footer">
         Challenge by
         <a
           href="https://www.frontendmentor.io?ref=challenge"
