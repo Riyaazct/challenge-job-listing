@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./JobListings.css";
+import Filter from "./Filter.js";
 
 const JobListings = (props) => {
   const [jobData, setJobData] = useState(props.jobData);
-  const [filtered, setFiltered] = useState([]);
   const [filteredList, setFilteredList] = useState([]);
 
   const handleOnClick = (e) => {
@@ -16,10 +16,12 @@ const JobListings = (props) => {
     );
     if (!filteredList.includes(e)) filteredList.push(e);
     setJobData(result, ...jobData);
+    console.log(filteredList);
   };
 
   return (
     <div className="container">
+      <Filter filteredList={filteredList} />
       {jobData.map(
         ({
           company,
