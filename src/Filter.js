@@ -9,6 +9,8 @@ const FilterComponent = ({ filteredList }) => {
           <img src="images/icon-remove.svg" alt="" />
         </div>
       ))}
+
+      <p>Clear</p>
     </div>
   );
 };
