@@ -1,5 +1,5 @@
-.header {
+.header img {
+  width: 100vw;
+  height: 130px;
   background: hsl(180, 29%, 50%);
-  height: 156px;
-  width: 1440px;
 }
