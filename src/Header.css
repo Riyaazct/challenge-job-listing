@@ -1,5 +1,11 @@
+.header {
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+}
+
 .header img {
   width: 100vw;
-  height: 130px;
   background: hsl(180, 29%, 50%);
+  margin-bottom: 0px;
 }

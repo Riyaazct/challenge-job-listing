@@ -10,7 +10,7 @@ const FilterComponent = ({
   setIsActive,
 }) => {
   return (
-    <div className={!isActive ? "FilteredContainer" : null}>
+    <div className={!isActive ? "FilteredContainer" : ""}>
       {filteredList.map((item, index) => (
         <div key={index} className="selectedFilterItem">
           <p>{item}</p>
