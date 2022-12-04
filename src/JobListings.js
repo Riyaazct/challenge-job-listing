@@ -5,6 +5,7 @@ import Filter from "./Filter.js";
 const JobListings = (props) => {
   const [jobData, setJobData] = useState(props.jobData);
   const [filteredList, setFilteredList] = useState([]);
+  const [classInUse, setClassInUse] = useState("hideClearElement");
 
   const handleOnClick = (e) => {
     let result = jobData.filter(
@@ -15,13 +16,19 @@ const JobListings = (props) => {
         job.tools.includes(e)
     );
     if (!filteredList.includes(e)) filteredList.push(e);
-    setJobData(result, ...jobData);
-    console.log(filteredList);
+    setJobData(result);
+    setClassInUse("");
   };
 
   return (
     <div className="container">
-      <Filter filteredList={filteredList} />
+      <Filter
+        filteredList={filteredList}
+        setFilteredList={setFilteredList}
+        setJobData={setJobData}
+        classInUse={classInUse}
+        setClassInUse={setClassInUse}
+      />
       {jobData.map(
         ({
           company,

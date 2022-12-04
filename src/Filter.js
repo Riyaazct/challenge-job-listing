@@ -1,6 +1,14 @@
+import { useState } from "react";
+import data from "./data/data.json";
 import "./Filter.css";
 
-const FilterComponent = ({ filteredList }) => {
+const FilterComponent = ({
+  filteredList,
+  setFilteredList,
+  setJobData,
+  classInUse,
+  setClassInUse,
+}) => {
   return (
     <div className="FilteredContainer">
       {filteredList.map((item, index) => (
@@ -10,7 +18,16 @@ const FilterComponent = ({ filteredList }) => {
         </div>
       ))}
 
-      <p>Clear</p>
+      <p
+        className={classInUse}
+        onClick={(e) => {
+          setFilteredList([]);
+          setJobData(data);
+          setClassInUse("hideClearElement");
+        }}
+      >
+        Clear
+      </p>
     </div>
   );
 };

@@ -56,3 +56,7 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.hideClearElement {
+  display: none;
+}
