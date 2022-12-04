@@ -26,6 +26,7 @@ const JobListings = (props) => {
         filteredList={filteredList}
         setFilteredList={setFilteredList}
         setJobData={setJobData}
+        jobData={jobData}
         isActive={isActive}
         setIsActive={setIsActive}
       />
@@ -47,7 +48,11 @@ const JobListings = (props) => {
         }) => {
           return (
             <div className="cardContainer" key={id}>
-              <div className="jobCard">
+              <div
+                className={
+                  featured ? "jobCard borderLeft" : "jobCard"
+                }
+              >
                 <div className="imageContainer cardContent">
                   <img src={logo} alt="" />
                 </div>
@@ -57,17 +62,13 @@ const JobListings = (props) => {
                       {company}
                     </li>
                     <li
-                      className={
-                        /* newAd ? "isNewAd" : "cardListItem"*/
-                        "isNewAd cardListItem"
-                      }
+                      className={newAd ? "isNewAd" : "cardListItem"}
                     >
                       {newAd ? "New!" : ""}
                     </li>
                     <li
                       className={
-                        /*featured ? "featured" : "cardListItem"*/
-                        "featured cardListItem"
+                        featured ? "featured" : "cardListItem"
                       }
                     >
                       {featured ? "Featured" : ""}

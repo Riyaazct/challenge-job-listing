@@ -3,7 +3,7 @@
   width: 80vw;
   padding: 20px 0;
   border-radius: 5px;
-  margin: -30px auto 20px auto;
+  margin: -93px auto 20px auto;
   position: relative;
   z-index: 1;
   left: 0;
@@ -57,6 +57,6 @@
   cursor: pointer;
 }
 
-.hideClearElement {
+.hideElement {
   display: none;
 }
