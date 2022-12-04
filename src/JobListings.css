@@ -1,30 +1,19 @@
 .container {
   background: hsl(180, 52%, 96%);
+  padding-top: 60px;
 }
-
-/* 
-
-Dark cyan :  hsl(180, 29%, 50%)
-
-### Neutral
-
-- Light Grayish Cyan (Background): hsl(180, 52%, 96%)
-- Light Grayish Cyan (Filter Tablets): hsl(180, 31%, 95%)
-- Dark Grayish Cyan: hsl(180, 8%, 52%)
-- Very Dark Grayish Cyan: hsl(180, 14%, 20%)
- */
 
 .cardContainer {
   display: flex;
-  margin: auto;
-  margin: 5px auto;
+  margin: 10px auto;
 }
 
 .cardContainer:first-child {
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 .jobCard {
+  background-color: white;
   display: flex;
   margin: 10px auto;
   padding: 10px;
@@ -32,6 +21,11 @@ Dark cyan :  hsl(180, 29%, 50%)
   box-shadow: 0px 12px 50px -6px rgba(91, 164, 164, 0.21);
   -webkit-box-shadow: 0px 12px 50px -6px rgba(91, 164, 164, 0.21);
   -moz-box-shadow: 0px 12px 50px -6px rgba(91, 164, 164, 0.21);
+  border-radius: 5px;
+}
+
+.borderLeft {
+  border-left: 5px solid hsl(180, 29%, 50%);
 }
 
 /* Logo*/
@@ -80,12 +74,10 @@ Dark cyan :  hsl(180, 29%, 50%)
 /* Content on the end of the card */
 
 .endContent {
-  margin-left: auto;
   display: flex;
-  height: 40px;
-  padding: 10px;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: auto;
   color: hsl(180, 29%, 50%);
   font-weight: 700;
 }
@@ -95,8 +87,13 @@ Dark cyan :  hsl(180, 29%, 50%)
   display: flex;
   align-items: center;
   border-radius: 5px;
-  padding: 5px;
   background: hsl(180, 31%, 95%);
+  padding: 8px;
+}
+.endContent li:hover {
+  background: hsl(180, 29%, 50%);
+  color: white;
+  cursor: pointer;
 }
 
 li {
