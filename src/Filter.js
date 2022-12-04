@@ -6,11 +6,11 @@ const FilterComponent = ({
   filteredList,
   setFilteredList,
   setJobData,
-  classInUse,
-  setClassInUse,
+  isActive,
+  setIsActive,
 }) => {
   return (
-    <div className="FilteredContainer">
+    <div className={!isActive ? "FilteredContainer" : null}>
       {filteredList.map((item, index) => (
         <div key={index} className="selectedFilterItem">
           <p>{item}</p>
@@ -19,11 +19,11 @@ const FilterComponent = ({
       ))}
 
       <p
-        className={classInUse}
+        className={isActive ? "hideClearElement" : null}
         onClick={(e) => {
           setFilteredList([]);
           setJobData(data);
-          setClassInUse("hideClearElement");
+          setIsActive(true);
         }}
       >
         Clear

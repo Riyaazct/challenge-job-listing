@@ -5,7 +5,7 @@ import Filter from "./Filter.js";
 const JobListings = (props) => {
   const [jobData, setJobData] = useState(props.jobData);
   const [filteredList, setFilteredList] = useState([]);
-  const [classInUse, setClassInUse] = useState("hideClearElement");
+  const [isActive, setIsActive] = useState("true");
 
   const handleOnClick = (e) => {
     let result = jobData.filter(
@@ -17,7 +17,7 @@ const JobListings = (props) => {
     );
     if (!filteredList.includes(e)) filteredList.push(e);
     setJobData(result);
-    setClassInUse("");
+    setIsActive(false);
   };
 
   return (
@@ -26,8 +26,8 @@ const JobListings = (props) => {
         filteredList={filteredList}
         setFilteredList={setFilteredList}
         setJobData={setJobData}
-        classInUse={classInUse}
-        setClassInUse={setClassInUse}
+        isActive={isActive}
+        setIsActive={setIsActive}
       />
       {jobData.map(
         ({
